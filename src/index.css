@@ -1,13 +1,107 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Fredericka+the+Great&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url("../public/musicc.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-origin: content-box;
+  background-size: auto;
+  /* color: ÷whitesmoke; */
+}
+
+.app {
+  margin-top: 50%;
+  height: 600px;
+  width: 500px;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  backdrop-filter: blur(25px);
+}
+
+#title {
+  font-size: 42px;
+  font-weight: bolder;
+  font-family: "Dancing Script", cursive;
+  font-family: "Fredericka the Great", cursive;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+#title-1 {
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Dancing Script", cursive;
+  font-family: "Fredericka the Great", cursive;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item {
+  display: flex;
+  padding: 10px;
+}
+
+.center {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-1 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  font-family: "Fredericka the Great", cursive;
+}
+.content {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: 40px;
+}
+.btn {
+  background-color: black;
+  border-radius: 10px;
+  width: 90px;
+  height: 35px;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .app {
+    width: 370px;
+  }
+  .content {
+    margin-left: 20px;
+  }
+  .btn {
+    margin-right: 20px;
+  }
 }
